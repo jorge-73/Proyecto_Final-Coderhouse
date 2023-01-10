@@ -11,7 +11,6 @@ class Productos{
 }
 // Lista de los objetos/productos creados mientras se lo va guardando en un array
 const listaProductos = [];
-
 // Celulares
 listaProductos.push(new Productos(1, 'Celular Samsung', 'Modelo A22', 122000, 1, "img/celulares/samsungA22.jpg"));
 listaProductos.push(new Productos(2, 'Celular lg', 'Modelo K20', 72000, 1, "img/celulares/lgK20.jpg"));
@@ -80,7 +79,6 @@ const funcionImprime = (e) => {
 
 };
 form.addEventListener('submit', funcionImprime);
-
 
 function ImprimirPantallaConProductos() {
     if (document.getElementById('bienvenida')) {
