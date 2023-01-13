@@ -123,7 +123,7 @@ const listaProductos = async () => {
                 ImprimirPantallaConProductos(productsThirty);
                 imprimirCarrito();
             }else{
-                const prodElegidos = productsThirty.filter((prod) => prod.category.name === e.target.value);
+                const prodElegidos = productsThirty.filter((prod) => prod.category.id == e.target.value);
                 console.log(prodElegidos);
                 ImprimirPantallaConProductos(prodElegidos);
                 imprimirCarrito();
