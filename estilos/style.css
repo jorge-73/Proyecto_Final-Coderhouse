@@ -1,0 +1,126 @@
+body {
+    min-height: 100vh;
+}
+
+#body{
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+}
+.container{
+    min-height: 82vh;
+}
+
+.img_prod {
+    height: 10em;
+    object-fit: contain;
+}
+
+.img-carrito{
+    width: 30px;
+}
+
+option {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#opciones::selection{
+    background-color: #b8860b;
+}
+
+.img-modal{
+    height: 3em;
+    object-fit: contain;
+}
+
+.img-modal-delete{
+    height: 2em;
+    object-fit: contain;
+}
+
+#titleProductos{
+    visibility: hidden;
+}
+
+#bienvenida{
+    border: 3px #b8860b solid;
+    border-radius: 20px;
+	overflow: hidden;
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+	transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+}
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+
+.img {
+    max-width: 100%;
+}
+
+#numeroCarrito{
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.card_prod {
+    border: 4px solid #b8860b;
+    border-radius: 10px;
+    min-height: 401.75px;
+
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    @-webkit-keyframes zoomIn {
+    0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+    }
+    50% {
+    opacity: 1;
+    }
+    }
+    @keyframes zoomIn {
+    0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+    }
+    50% {
+    opacity: 1;
+    }
+}
+.card_prod:hover{
+    transform: scale(1.05);
+}
+
+.img-redes{
+    width: 2.2em;
+    margin: 0 1em;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.bienvenida{
+    height: 1.3em;
+    font-weight: bold;
+    color: #b8860b;
+    text-shadow: 2px 2px 12px #555;
+}
